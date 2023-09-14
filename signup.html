@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | Academate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+            grid-column: span 2;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #555;
+            grid-column: span 2;
+        }
+
+        label {
+            font-size: 16px;
+            display: block;
+            margin-bottom: 5px;
+            color: #444;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .level,
+        .year {
+            margin-bottom: 20px;
+        }
+
+        .level label,
+        .year label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #444;
+        }
+
+        .level input[type="radio"],
+        .year input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            grid-column: span 2;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        button[type="submit"]:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>ACADEMATE</h1>
+        <h2>Signup to join study groups</h2>
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter your Name here">
+        <label for="email">Email</label>
+        <input type="text" placeholder="Enter your email">
+        <label for="phone">Phone number</label>
+        <input type="text" placeholder="Enter your phone number">
+        <label for="Institution">Institution</label>
+        <input type="text" placeholder="Enter your Institution">
+        <label for="course">Course of study</label>
+        <input type="text" placeholder="Enter your course here">
+        <div class="level">
+            <label>Choose the level</label>
+            <input type="radio" id="degree" name="level" value="1" required>
+            <label for="degree">Degree</label>
+            <input type="radio" id="diploma" name="level" value="2" required>
+            <label for="diploma">Diploma</label>
+            <input type="radio" id="certificate" name="level" value="3" required>
+            <label for="certificate">Certificate</label>
+        </div>
+        <div class="year">
+            <label>Year of study</label>
+            <input type="radio" id="1" name="year" value="1" required>
+            <label for="1">Year 1</label>
+            <input type="radio" id="2" name="year" value="2" required>
+            <label for="2">Year 2</label>
+            <input type="radio" id="3" name="year" value="3" required>
+            <label for="3">Year 3</label>
+            <input type="radio" id="4" name="year" value="4" required>
+            <label for="4">Year 4</label>
+        </div>
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter your password">
+        <label for="confirm">Confirm Password</label>
+        <input type="password" placeholder="Enter your Confirm Password">
+        <button type="submit">Register</button>
+    </div>
+</body>
+
+</html>
